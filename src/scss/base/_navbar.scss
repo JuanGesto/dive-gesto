@@ -1,0 +1,34 @@
+#header {
+background-color: white;
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 3.8em;
+        margin: 0 2%;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+            li {
+                list-style: none;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 2em;
+                    font-weight: 500;
+                }
+            }
+        }
+        #productsNav {
+            width: 40%;
+            margin-right: 25%;
+        }
+
+        img {
+            width: 5%;
+        }
+    }
+}
