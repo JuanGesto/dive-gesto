@@ -31,6 +31,8 @@ body {
 }
 #header #navbar ul li {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 #header #navbar ul li a {
   display: flex;
@@ -43,8 +45,36 @@ body {
   width: 40%;
   margin-right: 25%;
 }
-#header #navbar img {
+#header #navbar #logo {
   width: 5%;
+}
+
+#cartButton {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#cartCount {
+  background-color: rgb(255, 31, 31);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  position: absolute;
+  right: 4px;
+  bottom: 0px;
+}
+
+.btn-light {
+  background: none;
+  border: none;
 }
 
 #collapsingMenu {
@@ -116,6 +146,9 @@ body {
   100% {
     height: 0;
   }
+}
+#featured h2 {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,11 @@
+import ItemListContainer from "./ItemListContainer/ItemListContainer";
+
 const Main = () => {
+    const saludo = "Bienvenido"
     return (
         <>
             <main>
-                <section>
-                    
-                </section>
+                <ItemListContainer saludo={saludo}/>
             </main>
         </>
     );
