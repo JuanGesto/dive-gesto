@@ -28,9 +28,16 @@ background-color: white;
             width: 40%;
             margin-right: 25%;
         }
-
         #logo {
             width: 5%;
+        }
+        
+    }
+    .btn-light {
+        background: none;
+        border: none;
+        &:hover {
+            background-color: #e2e6ea;
         }
     }
 }
@@ -58,7 +65,4 @@ background-color: white;
     bottom: 0px;
 }
 
-.btn-light {
-    background: none;
-    border: none;
-}
+

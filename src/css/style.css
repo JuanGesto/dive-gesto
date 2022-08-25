@@ -48,6 +48,13 @@ body {
 #header #navbar #logo {
   width: 5%;
 }
+#header .btn-light {
+  background: none;
+  border: none;
+}
+#header .btn-light:hover {
+  background-color: #e2e6ea;
+}
 
 #cartButton {
   display: flex;
@@ -70,11 +77,6 @@ body {
   position: absolute;
   right: 4px;
   bottom: 0px;
-}
-
-.btn-light {
-  background: none;
-  border: none;
 }
 
 #collapsingMenu {
@@ -149,6 +151,38 @@ body {
 }
 #featured h2 {
   color: white;
+}
+
+#count {
+  margin: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+}
+#count div {
+  display: flex;
+  width: 100%;
+  height: 1.75em;
+}
+#count div p {
+  width: 6.5em;
+  height: 1.75em;
+  text-align: center;
+}
+#count div p:hover {
+  background-color: white;
+}
+#count div button {
+  width: 1.75em;
+  height: 1.75em;
+  padding: 0 3px;
+}
+#count div .btn-light {
+  border-bottom: 1px solid #b1b1b1;
+}
+#count button {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
