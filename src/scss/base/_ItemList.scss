@@ -1,0 +1,17 @@
+#featured {
+    h2 {
+        color: white;
+    }
+    #ItemList {
+        display: flex;
+        div {
+            margin: 1em;
+            h3 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
