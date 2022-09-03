@@ -149,12 +149,60 @@ body {
     height: 0;
   }
 }
+#featured h2 {
+  color: white;
+}
+#featured #ItemList {
+  display: flex;
+}
+#featured #ItemList div {
+  margin: 1em;
+}
+#featured #ItemList div h3 {
+  margin: 0;
+}
+#featured #ItemList div p {
+  margin: 0;
+}
+
+#itemDetailContainer {
+  display: flex;
+  justify-content: center;
+}
+#itemDetailContainer #itemDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#itemDetailContainer #itemDetail .colors {
+  display: flex;
+  justify-content: center;
+}
+#itemDetailContainer #itemDetail .colors .color {
+  border: 1px solid #b1b1b1;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  list-style: none;
+  margin: 0.2em;
+}
+#itemDetailContainer #itemDetail img {
+  width: 30%;
+}
+
+.activeIndicator {
+  display: flex;
+  flex-direction: row;
+}
+
 #count {
   margin: 1em;
   color: white;
   display: flex;
   flex-direction: column;
   width: 10em;
+  height: 3.5em;
+  border: 1px solid #b1b1b1;
 }
 #count div {
   display: flex;
@@ -179,22 +227,6 @@ body {
 }
 #count button {
   border: none;
-}
-
-#featured h2 {
-  color: white;
-}
-#featured #ItemList {
-  display: flex;
-}
-#featured #ItemList div {
-  margin: 1em;
-}
-#featured #ItemList div h3 {
-  margin: 0;
-}
-#featured #ItemList div p {
-  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

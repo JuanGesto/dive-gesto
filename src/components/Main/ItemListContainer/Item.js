@@ -2,9 +2,9 @@ import React from "react";
 
 const Item = ({item}) => {
     return (
-        <div className="card card-body" key={item.id}>
+        <div className="card card-body">
             <h3>{item.title}</h3>
-            <img src={item.img} alt="" />
+            <img src={item.colors[0].imgs[0].img} alt="" />
             <p>${item.price}</p>
         </div>
     );
