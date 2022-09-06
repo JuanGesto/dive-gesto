@@ -1,7 +1,7 @@
 export const products = [
     {
         id: 0,
-        title: "product 1",
+        title: "DIVE C9+",
         price: 399.99,
         stock: 10,
         category: "category 1",
@@ -114,7 +114,7 @@ export const products = [
     },
     {
         id: 1,
-        title: "product 2",
+        title: "DIVE C9",
         price: 299.99,
         stock: 14,
         category: "category 1",
@@ -207,7 +207,7 @@ export const products = [
                 imgs: [
                     {
                         id: 0,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Green/S22-main_fll2g1.webp"
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662408698/Dive/S22%2B/Green/S22-main_wij27k.webp"
                     },
                     {
                         id: 1,
@@ -231,7 +231,7 @@ export const products = [
     },
     {
         id: 2,
-        title: "product 3",
+        title: "DIVE E8",
         price: 99.99,
         stock: 0,
         category: "category 1",
@@ -321,7 +321,7 @@ export const products = [
     },
     {
         id: 3,
-        title: "product 4",
+        title: "DIVE C9+",
         price: 399.99,
         stock: 37,
         category: "category 2",
@@ -430,6 +430,123 @@ export const products = [
                     }
                 ]
             },
+        ]
+    },
+    {
+        id: 0,
+        title: "DIVE C9",
+        price: 299.99,
+        stock: 14,
+        category: "category 1",
+        colors: [
+            {
+                id: 2,
+                color: "Phantom White",
+                colorN: "#E9E9E7",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-main_eyijpb.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-front_dzabmd.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-back_oi7r4i.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-angle_vi4y6j.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-side_tnzosb.webp"
+                    }
+                ]
+            },
+            {
+                id: 1,
+                color: "Phantom Black",
+                colorN: "#000000",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20black/S22-main_slsxep.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Phantom%20black/S22-front_aovfuz.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Phantom%20black/S22-back_z9w5fr.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Phantom%20black/S22-angle_l0qooe.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20black/S22-side_hgfviz.webp"
+                    }
+                ]
+            },
+            {
+                id: 2,
+                color: "Pink Gold",
+                colorN: "#E7D1CD",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-main_mpjzjw.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-front_pmhjwh.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-back_agg8ab.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-angle_f4nxnd.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-side_pwvmtc.webp"
+                    }
+                ]
+            },
+            {
+                id: 3,
+                color: "Green",
+                colorN: "#507974",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662408698/Dive/S22%2B/Green/S22-main_wij27k.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Green/S22-front_vpmerb.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Green/S22-back_mc2ev4.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Green/S22-angle_qargax.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Green/S22-side_zvhvyh.webp"
+                    }
+                ]
+            }
         ]
     }
 ];

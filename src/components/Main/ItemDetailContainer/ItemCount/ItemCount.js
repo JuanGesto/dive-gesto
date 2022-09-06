@@ -14,8 +14,8 @@ const ItemCount = (props) => {
     };
 
     return (
-        <div id="count">
-            <div>
+        <div id="countContainer">
+            <div id="count">
                 <button onClick={restar} className="btn, btn-light">
                     -
                 </button>

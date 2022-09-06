@@ -1,55 +1,115 @@
 #itemDetailContainer {
     display: flex;
     justify-content: center;
+    margin: 5em 0;
+
     #itemDetail {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 1.25em 3em;
+        max-width: 900px;
+        min-width: fit-content;
+    }
+
+    #itemDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        text-align: end;
+        div:nth-of-type(1) {
+            width: 100%;
+        }
+        h3 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        h5 {
+            font-size: 1.25rem;
+            text-align: start;
+            margin: 0;
+        }
+        h5:nth-of-type(2) {
+            font-weight: 400;
+        }
         .colors {
             display: flex;
             justify-content: center;
-            .color {
+            margin: 0.5em 0;
+            .colorSelector {
                 border: 1px solid #b1b1b1;
                 border-radius: 50%;
-                width: 2em;
-                height: 2em;
+                width: 2.25em;
+                height: 2.25em;
                 list-style: none;
-                margin: .2em;
+                margin: 0.2em;
+                cursor: pointer;
             }
-        }
-        img {
-            width: 30%;
+            .colorSelected {
+                border: 3px solid #4fa6e0;
+            }
         }
     }
 }
-.activeIndicator {
+
+#itemDetailCarousel {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    #carouselIndicatorsContainer {
+        width: 4rem;
+        .carousel-indicators {
+            .activeIndicator {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    #carousel {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .carouselControl {
+            width: 50%;
+            opacity: 0;
+        }
+        div {
+            display: block;
+            position: relative;
+            width: 500px;
+        }
+    }
 }
 
-#count {
+#countContainer {
     margin: 1em;
-    color: white;
     display: flex;
     flex-direction: column;
-    width: 10em;
-    height: 3.5em;
     border: 1px solid #b1b1b1;
-    div {
+    margin: 0;
+    #count {
         display: flex;
+        flex-direction: row;
+        align-content: space-around;
         width: 100%;
-        height: 1.75em;
         p {
-            width: 6.5em;
-            height: 1.75em;
+            width: 6em;
+            height: 2em;
             text-align: center;
+            font-size: 1.5rem;
+            margin: 0;
             &:hover {
-                background-color: white;
+                background-color: #f8f9fa;
             }
         }
         button {
-            width: 1.75em;
-            height: 1.75em;
+            width: 3em;
+            height: 3em;
             padding: 0 3px;
         }
         .btn-light {
@@ -58,5 +118,28 @@
     }
     button {
         border: none;
+    }
+    #addToCart {
+        height: 3em;
+        font-size: 1rem;
+    }
+}
+
+.carousel-indicators {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: fit-content;
+    margin: 0;
+    .activeIndicator {
+        width: 4em;
+        height: 4em;
+        margin: 0;
+        border: 0;
+        opacity: 100%;
+        img {
+            width: 4em;
+        }
     }
 }

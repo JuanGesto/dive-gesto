@@ -9,7 +9,10 @@ const ItemDetailContainer = () => {
         const getProduct = () =>
             new Promise((res, rej) => {
                 const unicoProducto = products.find((prod)=> prod.id === 0)
+                setTimeout(() => {
                     res(unicoProducto);
+                }, 2000);
+
             });
         getProduct()
         .then((data)=>{

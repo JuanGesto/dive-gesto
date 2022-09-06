@@ -4,8 +4,8 @@
     }
     #ItemList {
         display: flex;
-        div {
-            margin: 1em;
+        .featuredItem {
+            margin: 2em;
             h3 {
                 margin: 0;
             }

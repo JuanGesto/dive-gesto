@@ -7,7 +7,10 @@ const ItemListContainer = ({ saludo }) => {
 
     useEffect(() => {
         const getProducts = new Promise((res, rej) => {
-        res(products);
+            setTimeout(() => {
+                res(products);
+            }, 2000);
+
         });
 
         getProducts
