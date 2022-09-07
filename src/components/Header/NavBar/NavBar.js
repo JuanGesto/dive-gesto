@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CollapseMenu from "./CollapseMenu";
 import CartWidget from "./CartWidget";
 
@@ -32,7 +33,7 @@ const NavBar = () => {
         <>
             <header id="header" onMouseLeave={collapseHide}>
                 <nav id="navbar">
-                    <a id="logo" href="index.html"><img src="media/images/logo.svg" alt="DIVE"/></a>
+                    <Link to={"/"} id="logo"><img src="https://res.cloudinary.com/dss1do1r6/image/upload/v1662510099/Dive/logo_xf7mi7.svg" alt="DIVE"/></Link>
                     <ul id="productsNav">
                         <li
                             onMouseOver={() =>

@@ -13,7 +13,7 @@ const ItemDetail = ({ item }) => {
             document.querySelector(".colorSelector").classList.add("colorSelected");
             document.querySelector(".carousel-indicators").classList.remove("invisible");
             document.querySelector(".carousel-indicators").classList.add("visible");
-        }, 2500);
+        }, 550);
     },[]);
 
     let colorNames = []
@@ -26,7 +26,6 @@ const ItemDetail = ({ item }) => {
         color = newColor
         colors = item.colors[color]
         document.getElementById("colorName").innerHTML = colorNames[color];
-        console.log(color)
         document.querySelector(".colorSelector:nth-child("+(color+1)+")").classList.add("colorSelected");
         document.querySelector(".carousel-inner:nth-child("+(color+1)+")").querySelector(".carousel-item").classList.add("active");
         document.querySelector(".carousel-indicators:nth-child("+(color+1)+")").classList.remove("invisible")

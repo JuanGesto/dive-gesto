@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { products } from "../ItemListContainer/products";
+import { useParams } from "react-router-dom"
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState({});
+    const {itemID} = useParams();
 
     useEffect(() => {
         const getProduct = () =>
             new Promise((res, rej) => {
-                const unicoProducto = products.find((prod)=> prod.id === 0)
+                const unicoProducto = products.find((prod)=> prod.id === parseInt(itemID))
                 setTimeout(() => {
                     res(unicoProducto);
-                }, 2000);
+                }, 500);
 
             });
         getProduct()

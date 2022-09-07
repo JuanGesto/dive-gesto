@@ -4,7 +4,7 @@ export const products = [
         title: "DIVE C9+",
         price: 399.99,
         stock: 10,
-        category: "category 1",
+        category: "smartphones",
         colors: [
             {
                 id: 0,
@@ -117,7 +117,7 @@ export const products = [
         title: "DIVE C9",
         price: 299.99,
         stock: 14,
-        category: "category 1",
+        category: "smartphones",
         colors: [
             {
                 id: 0,
@@ -234,7 +234,7 @@ export const products = [
         title: "DIVE E8",
         price: 99.99,
         stock: 0,
-        category: "category 1",
+        category: "smartphones",
         colors: [
             {
                 id: 0,
@@ -324,7 +324,7 @@ export const products = [
         title: "DIVE C9+",
         price: 399.99,
         stock: 37,
-        category: "category 2",
+        category: "smartphones",
         colors: [
             {
                 id: 0,
@@ -433,11 +433,11 @@ export const products = [
         ]
     },
     {
-        id: 0,
+        id: 4,
         title: "DIVE C9",
         price: 299.99,
         stock: 14,
-        category: "category 1",
+        category: "smartphones",
         colors: [
             {
                 id: 2,
@@ -544,6 +544,312 @@ export const products = [
                     {
                         id: 4,
                         img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Green/S22-side_zvhvyh.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: "DIVE Watch 5 Pro",
+        price: 449.99,
+        stock: 26,
+        category: "watches",
+        colors: [
+            {
+                id: 0,
+                color: "Pink Gold",
+                colorN: "#F0CFC3",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579657/Dive/Watches/Watch5Pro/Pink%20gold/Watch5Pro-main_umsalg.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579656/Dive/Watches/Watch5Pro/Pink%20gold/Watch5Pro-front_k5cfxn.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579656/Dive/Watches/Watch5Pro/Pink%20gold/Watch5Pro-back_mxaryv.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579657/Dive/Watches/Watch5Pro/Pink%20gold/Watch5Pro-side_ronqz8.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579656/Dive/Watches/Watch5Pro/Pink%20gold/Watch5Pro-open_ioejrv.webp"
+                    }
+                ]
+            },
+            {
+                id: 1,
+                color: "Graphite",
+                colorN: "#4A4A4D",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579656/Dive/Watches/Watch5Pro/Graphite/Watch5Pro-main_oxbgkk.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579656/Dive/Watches/Watch5Pro/Graphite/Watch5Pro-front_feibet.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579656/Dive/Watches/Watch5Pro/Graphite/Watch5Pro-back_qsauut.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579656/Dive/Watches/Watch5Pro/Graphite/Watch5Pro-side_mvmfga.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579656/Dive/Watches/Watch5Pro/Graphite/Watch5Pro-open_lyfu1e.webp"
+                    }
+                ]
+            },
+            {
+                id: 2,
+                color: "Silver",
+                colorN: "#C7C8C9",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579657/Dive/Watches/Watch5Pro/Silver/Watch5Pro-main_f78qzg.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579657/Dive/Watches/Watch5Pro/Silver/Watch5Pro-front_ztyvv2.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579657/Dive/Watches/Watch5Pro/Silver/Watch5Pro-back_ghacl3.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579657/Dive/Watches/Watch5Pro/Silver/Watch5Pro-side_tgcksi.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579657/Dive/Watches/Watch5Pro/Silver/Watch5Pro-open_sv3spr.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 6,
+        title: "DIVE Watch 5",
+        price: 329.99,
+        stock: 28,
+        category: "watches",
+        colors: [
+            {
+                id: 0,
+                color: "Black",
+                colorN: "#404145",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579654/Dive/Watches/Watch5/Black/Watch5-main_t4vdk9.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579654/Dive/Watches/Watch5/Black/Watch5-front_pfe4zj.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579654/Dive/Watches/Watch5/Black/Watch5-back_tsntd1.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579654/Dive/Watches/Watch5/Black/Watch5-side_cbgh3a.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579654/Dive/Watches/Watch5/Black/Watch5-open_lmwgyj.webp"
+                    }
+                ]
+            },
+            {
+                id: 1,
+                color: "Green",
+                colorN: "#445252",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579655/Dive/Watches/Watch5/Green/Watch5-main_qrm4dq.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579654/Dive/Watches/Watch5/Green/Watch5-front_tt2c7c.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579654/Dive/Watches/Watch5/Green/Watch5-back_olknsb.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579655/Dive/Watches/Watch5/Green/Watch5-side_yuzwom.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579655/Dive/Watches/Watch5/Green/Watch5-open_bogdk4.webp"
+                    }
+                ]
+            },
+            {
+                id: 2,
+                color: "Silver",
+                colorN: "#C7C8CA",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579655/Dive/Watches/Watch5/Silver/Watch5-main_eocbnl.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579655/Dive/Watches/Watch5/Silver/Watch5-front_mwyr0v.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579655/Dive/Watches/Watch5/Silver/Watch5-back_fsvu1t.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579655/Dive/Watches/Watch5/Silver/Watch5-side_jdbgsh.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579655/Dive/Watches/Watch5/Silver/Watch5-open_czcn8x.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 7,
+        title: "DIVE Watch 4",
+        price: 249.99,
+        stock: 16,
+        category: "watches",
+        colors: [
+            {
+                id: 0,
+                color: "Grey Titanium",
+                colorN: "#867E74",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579653/Dive/Watches/Watch4/Gray/Watch4-main_rgmoam.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579653/Dive/Watches/Watch4/Gray/Watch4-front_o60s8b.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579653/Dive/Watches/Watch4/Gray/Watch4-back_brxt6w.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579654/Dive/Watches/Watch4/Gray/Watch4-side_rpz3tv.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579654/Dive/Watches/Watch4/Gray/Watch4-open_ig623y.webp"
+                    }
+                ]
+            },
+            {
+                id: 1,
+                color: "Black Titanium",
+                colorN: "#404145",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579653/Dive/Watches/Watch4/Black/Watch4-main_wedrvk.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579653/Dive/Watches/Watch4/Black/Watch4-front_xn2c4a.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Watch4/Black/Watch4-back_r2ogy2.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579653/Dive/Watches/Watch4/Black/Watch4-side_kpuxei.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579653/Dive/Watches/Watch4/Black/Watch4-open_eszl0u.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 8,
+        title: "DIVE Fit ",
+        price: 249.99,
+        stock: 16,
+        category: "watches",
+        colors: [
+            {
+                id: 0,
+                color: "Black",
+                colorN: "#000000",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Black/Fit-main_xujbzx.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Black/Fit-front_qtpsja.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Black/Fit-back_a0qn5i.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Black/Fit-side_e3lg9m.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Black/Fit-open_klea30.webp"
+                    }
+                ]
+            },
+            {
+                id: 1,
+                color: "Scarlet",
+                colorN: "#EB695C",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579653/Dive/Watches/Fit/Scarlet/Fit-main_xvpadz.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Scarlet/Fit-front_ef7nj0.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Scarlet/Fit-back_vjo6eg.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Scarlet/Fit-side_h88yhi.webp"
+                    },
+                    {
+                        id: 4,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Scarlet/Fit-open_gewi8l.webp"
                     }
                 ]
             }

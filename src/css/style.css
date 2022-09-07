@@ -149,20 +149,29 @@ body {
     height: 0;
   }
 }
+#featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #featured h2 {
   color: white;
 }
 #featured #ItemList {
   display: flex;
+  flex-wrap: wrap;
 }
 #featured #ItemList .featuredItem {
   margin: 2em;
+  padding: 0.8em 0;
+  width: 15em;
+  flex-grow: 0;
 }
-#featured #ItemList .featuredItem h3 {
-  margin: 0;
+#featured #ItemList .featuredItem h3, #featured #ItemList .featuredItem p {
+  margin: 0 13%;
 }
-#featured #ItemList .featuredItem p {
-  margin: 0;
+#featured #ItemList .featuredItem img {
+  width: 15em;
 }
 
 #itemDetailContainer {

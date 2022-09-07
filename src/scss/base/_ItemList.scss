@@ -1,16 +1,23 @@
 #featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h2 {
         color: white;
     }
     #ItemList {
         display: flex;
+        flex-wrap: wrap;
         .featuredItem {
             margin: 2em;
-            h3 {
-                margin: 0;
+            padding: .8em 0;
+            width: 15em;
+            flex-grow: 0;
+            h3, p {
+                margin: 0 13%;
             }
-            p {
-                margin: 0;
+            img {
+                width: 15em;
             }
         }
     }

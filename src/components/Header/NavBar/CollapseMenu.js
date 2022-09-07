@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CollapseMenu = () => {
 
@@ -8,19 +9,19 @@ const CollapseMenu = () => {
                     <h2>Mobile</h2>
                     <ul>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Smartphones</a>
+                            <Link to={"/category/smartphones"}>Smartphones</Link>
                             <div></div>
                         </li>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Tablets</a>
+                            <Link to={"/category/tablets"}>Tablets</Link>
                             <div></div>
                         </li>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Watches</a>
+                            <Link to={"/category/watches"}>Watches</Link>
                             <div></div>
                         </li>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Accesories</a>
+                            <Link to={"/category/accesories"}>Accesories</Link>
                             <div></div>
                         </li>
                     </ul>
@@ -30,15 +31,15 @@ const CollapseMenu = () => {
                     <h2>Audio</h2>
                     <ul>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Sound devices</a>
+                            <Link to={"/category/soundDevices"}>Sound devices</Link>
                             <div></div>
                         </li>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Headphones</a>
+                            <Link to={"/category/headphones"}>Headphones</Link>
                             <div></div>
                         </li>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Earbuds</a>
+                            <Link to={"/category/earbuds"}>Earbuds</Link>
                             <div></div>
                         </li>
                     </ul>
@@ -48,11 +49,11 @@ const CollapseMenu = () => {
                     <h2>TV</h2>
                     <ul>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">TVs</a>
+                            <Link to={"/category/tvs"}>TVs</Link>
                             <div></div>
                         </li>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Projectors</a>
+                            <Link to={"/category/projectors"}>Projectors</Link>
                             <div></div>
                         </li>
                     </ul>
@@ -62,11 +63,11 @@ const CollapseMenu = () => {
                     <h2>Computing</h2>
                     <ul>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Wave Books</a>
+                            <Link to={"/category/waveBooks"}>Wave Books</Link>
                             <div></div>
                         </li>
                         <li className="btn btn-light">
-                            <a href="javascript:void(0);">Computer monitors</a>
+                            <Link to={"/category/computerMonitors"}>Computer monitors</Link>
                             <div></div>
                         </li>
                     </ul>
