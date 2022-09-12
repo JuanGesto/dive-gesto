@@ -5,12 +5,12 @@ import { useParams } from "react-router-dom"
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState({});
-    const {itemID} = useParams();
+    const {id} = useParams();
 
     useEffect(() => {
         const getProduct = () =>
             new Promise((res, rej) => {
-                const unicoProducto = products.find((prod)=> prod.id === parseInt(itemID))
+                const unicoProducto = products.find((prod)=> prod.id === parseInt(id))
                 setTimeout(() => {
                     res(unicoProducto);
                 }, 500);

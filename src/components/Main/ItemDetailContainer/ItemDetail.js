@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount/ItemCount";
 
 const ItemDetail = ({ item }) => {
-
-    const onAdd = () => {
-        alert("Se agregó al carrito");
+    const [cantidad, setCantidad] = useState(0)
+    const onAdd = (cantidad) => {
+        cantidad === 1 ? alert("Se agregó al carrito") : alert("Se agregaron "+cantidad+" unidades al carrito")
+        setCantidad(cantidad)
     };
 
     useEffect(() => {
@@ -96,16 +98,14 @@ const ItemDetail = ({ item }) => {
                     </ul>
                     <h5 id="colorName">{colorNames[color]}</h5>
                 </div>
-                <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+                {cantidad === 0
+                    ? <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
+                    : <Link to={"/cart"}><button className="btn, btn-light" id="goToCart">Go to cart</button></Link>
+                }
+                
             </div>
         </div>
     );
 };
 
 export default ItemDetail;
-
-/*
-
-
-
-*/

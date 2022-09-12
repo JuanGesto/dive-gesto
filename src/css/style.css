@@ -128,7 +128,7 @@ body {
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
-  height: 60vh;
+  height: 35vh;
 }
 
 @keyframes appear {
@@ -141,7 +141,7 @@ body {
 }
 @keyframes rollDown {
   100% {
-    height: 60vh;
+    height: 35vh;
   }
 }
 @keyframes rollUp {
@@ -159,6 +159,7 @@ body {
 }
 #featured #ItemList {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 #featured #ItemList .featuredItem {
@@ -314,6 +315,16 @@ body {
 }
 .carousel-indicators .activeIndicator img {
   width: 4em;
+}
+
+#goToCart {
+  padding: 0.25em 1em;
+  border-top: 1px solid #b1b1b1;
+  border-left: 1px solid #b1b1b1;
+}
+
+#cart {
+  margin: 5em;
 }
 
 /*# sourceMappingURL=style.css.map */

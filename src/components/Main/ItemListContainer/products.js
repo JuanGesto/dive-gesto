@@ -795,7 +795,7 @@ export const products = [
     {
         id: 8,
         title: "DIVE Fit ",
-        price: 249.99,
+        price: 119.99,
         stock: 16,
         category: "watches",
         colors: [
@@ -850,6 +850,171 @@ export const products = [
                     {
                         id: 4,
                         img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662579652/Dive/Watches/Fit/Scarlet/Fit-open_gewi8l.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 9,
+        title: "DIVE Tab 8",
+        price: 699.99,
+        stock: 14,
+        category: "tablets",
+        colors: [
+            {
+                id: 0,
+                color: "Graphite",
+                colorN: "#494D53",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S8/Graphite/TabS8-main_nsrrmu.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S8/Graphite/TabS8-back_blgwbr.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S8/Graphite/TabS8-angle_h53i6x.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S8/Graphite/TabS8-side_bu659p.webp"
+                    }
+                ]
+            },
+            {
+                id: 1,
+                color: "Silver",
+                colorN: "#C0C0C0",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584522/Dive/Tablets/Tab%20S8/Silver/TabS8-main_vwf6pj.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584522/Dive/Tablets/Tab%20S8/Silver/TabS8-back_malxgt.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584522/Dive/Tablets/Tab%20S8/Silver/TabS8-angle_pgkwdp.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584522/Dive/Tablets/Tab%20S8/Silver/TabS8-side_ljrvdj.webp"
+                    }
+                ]
+            },
+            {
+                id: 2,
+                color: "Pink Gold",
+                colorN: "#D6B6A8",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584522/Dive/Tablets/Tab%20S8/Pink%20Gold/TabS8-main_zcfu8n.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S8/Pink%20Gold/TabS8-back_myutqn.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S8/Pink%20Gold/TabS8-angle_pljf0r.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584522/Dive/Tablets/Tab%20S8/Pink%20Gold/TabS8-side_iyqprq.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 10,
+        title: "DIVE Tab 7",
+        price: 459.99,
+        stock: 19,
+        category: "tablets",
+        colors: [
+            {
+                id: 0,
+                color: "Mystic Black",
+                colorN: "#3C3C3E",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584520/Dive/Tablets/Tab%20S7/Mystic%20Black/TabS7-main_xpx2dx.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584520/Dive/Tablets/Tab%20S7/Mystic%20Black/TabS7-back_hvhzsc.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584520/Dive/Tablets/Tab%20S7/Mystic%20Black/TabS7-angle_bniczt.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584520/Dive/Tablets/Tab%20S7/Mystic%20Black/TabS7-side_plq86r.webp"
+                    }
+                ]
+            },
+            {
+                id: 1,
+                color: "Mystic Navy",
+                colorN: "#3A414A",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S7/Mystic%20Navy/TabS7-main_hpv9nu.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S7/Mystic%20Navy/TabS7-back_vizdtw.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S7/Mystic%20Navy/TabS7-angle_wtecw3.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584521/Dive/Tablets/Tab%20S7/Mystic%20Navy/TabS7-side_fzfg6w.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 11,
+        title: "DIVE Tab 6",
+        price: 289.99,
+        stock: 19,
+        category: "tablets",
+        colors: [
+            {
+                id: 0,
+                color: "Gray",
+                colorN: "#777777",
+                imgs: [
+                    {
+                        id: 0,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584520/Dive/Tablets/Tab%20S6/Gray/TabS6-main_ayahwh.webp"
+                    },
+                    {
+                        id: 1,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584520/Dive/Tablets/Tab%20S6/Gray/TabS6-back_ichrhh.webp"
+                    },
+                    {
+                        id: 2,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584520/Dive/Tablets/Tab%20S6/Gray/TabS6-angle_mmqpnw.webp"
+                    },
+                    {
+                        id: 3,
+                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662584520/Dive/Tablets/Tab%20S6/Gray/TabS6-side_w5zwzi.webp"
                     }
                 ]
             }

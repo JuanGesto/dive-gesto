@@ -6,16 +6,16 @@ import { products } from "./products";
 const ItemListContainer = ({ saludo }) => {
     const [items, setItems] = useState([]);
 
-    const { categoryName } = useParams();
+    const { id } = useParams();
 
     useEffect(() => {
         const getProducts = () =>
             new Promise((res, rej) => {
                 const prodFiltrados = products.filter(
-                    (prod) => prod.category === categoryName
+                    (prod) => prod.category === id
                 );
                 setTimeout(() => {
-                    res(categoryName ? prodFiltrados : products);
+                    res(id ? prodFiltrados : products);
                 }, 500);
             });
         getProducts()
@@ -25,12 +25,12 @@ const ItemListContainer = ({ saludo }) => {
             .catch((error) => {
                 console.log(error);
             });
-    }, [categoryName]);
+    }, [id]);
 
     return (
         <>
             <section id="featured">
-                <h2>{saludo}</h2>
+                {/*<h2>{saludo}</h2>*/}
                 <div id="ItemList">
                     <ItemList items={items} />
                 </div>
