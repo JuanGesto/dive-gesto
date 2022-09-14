@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../../context/CartContext";
 import ItemCount from "./ItemCount/ItemCount";
 
+
 const ItemDetail = ({ item }) => {
-    const [cantidad, setCantidad] = useState(0)
-    const onAdd = (cantidad) => {
-        cantidad === 1 ? alert("Se agregó al carrito") : alert("Se agregaron "+cantidad+" unidades al carrito")
-        setCantidad(cantidad)
+    const [quantity, setQuantity] = useState(0)
+    const {addItem} = useContext(CartContext);
+
+    const onAdd = (quantity) => {
+        setQuantity(quantity)
+        addItem(item, quantity)
     };
 
     useEffect(() => {
@@ -98,7 +103,7 @@ const ItemDetail = ({ item }) => {
                     </ul>
                     <h5 id="colorName">{colorNames[color]}</h5>
                 </div>
-                {cantidad === 0
+                {quantity === 0
                     ? <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
                     : <Link to={"/cart"}><button className="btn, btn-light" id="goToCart">Go to cart</button></Link>
                 }

@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CartWidget = () => {
     return (
-            <a
+            <Link
+                to={"/cart"}
                 className="btn btn-light"
-                id="cartButton"
-                href="javascript:void(0);">
+                id="cartButton">
                 <span className="material-symbols-outlined">shopping_cart</span>
                 <span id="cartCount">2</span>
-            </a>
+            </Link>
     );
 };
 
