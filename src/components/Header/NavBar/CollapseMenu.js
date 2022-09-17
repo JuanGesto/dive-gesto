@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const CollapseMenu = () => {
 
     return (
+        <>
             <div className="card card-body" id="collapsingMenu">
                 <div id="ulMobile" className="d-none">
                     <h2>Mobile</h2>
@@ -73,6 +74,7 @@ const CollapseMenu = () => {
                     </ul>
                 </div>
             </div>
+        </>
     );
 };
 

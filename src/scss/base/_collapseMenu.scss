@@ -3,6 +3,9 @@
     border: 0;
     border-radius: 0;
     overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
     .d-block {
         opacity: 0%;
         animation-name: appear;
@@ -66,5 +69,44 @@
 @keyframes rollUp {
     100% {
         height: 0;
+    }
+}
+
+.transparent {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    animation-name: transparent;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    background-color: #0000008f;
+}
+@keyframes transparent {
+    99% {
+        z-index: 0;
+        height: 100%;
+    }
+    100% {
+        background-color: #00000000;
+        z-index: 0;
+        height: 1px;
+    }
+}
+
+.black {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    animation-name: darken;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+@keyframes darken {
+    100% {
+        background-color: #0000008f;
     }
 }

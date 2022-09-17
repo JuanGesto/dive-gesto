@@ -1,3 +1,101 @@
-#cart {
+#cartContainer {
+    margin: 3em 8em;
+        #cartTitle {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            img {
+                width: 5em;
+            }
+            h3 {
+                font-size: 2em;
+                font-weight: 400;
+            }
+        }
+    
+    button {
+        height: 2.375em;
+    }
+}
+
+.cartItemContainer, .columns, .total {
+    display: grid;
+    grid-template-areas: "cartItem quantity price removeItem";
+    grid-template-columns: 6fr repeat(3, 1fr);
+    column-gap: 1em;
+    padding: .5em;
+    border-bottom: solid 1px rgb(204, 204, 204);
+    p {
+        font-size: 1.2em;
+    }
+}
+.total {
+    border-bottom: none;
+}
+
+.cartItem {
+    grid-area: cartItem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.quantity {
+    grid-area: quantity;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.price {
+    grid-area: price;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.remove {
+    grid-area: removeItem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    p {
+        cursor: pointer;
+        margin: 0;
+        font-size: 1.1em;
+        color: rgb(59, 59, 59);
+    }
+}
+
+#cartBtns {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em 0;
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3a65a5;
+        width: 14em;
+        height: 3.55em;
+        &:hover {
+            background-color: #3a65a5f6;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: 1.4em;
+        color: #FFFFFF;
+    }
+}
+
+
+#emptyCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 5em;
 }
