@@ -25,11 +25,14 @@ const Cart = () => {
             </div>
             {cart.map((item) => {
                 return (
-                    <div className="cartItemContainer" key={item.id} >
-                        <Link to={`/detail/${item.id}`} id="cartTitle" className="cartItem"><img src={item.colors[0].imgs[0].img} alt="" /><h3>{item.title}</h3></Link>
+                    <div className="cartItemContainer" key={item.id + item.colorId} >
+                        <Link to={"/detail/"+item.id+item.colorId} id="cartTitle" className="cartItem">
+                            <img src={item.colors[parseInt(item.colorId)].imgs[0].img} alt="" />
+                            <h3>{item.title + " " + item.colors[parseInt(item.colorId)].color}</h3>
+                        </Link>
                         <p className="quantity">{item.quantity}</p>
-                        <p className="price">${item.price}</p>
-                        <div onClick={()=>removeItem(item.id)} className="remove"><p>Remove</p></div>
+                        <p className="price">${(item.price * item.quantity).toFixed(2)}</p>
+                        <div onClick={()=>removeItem(item.id, item.colorId)} className="remove"><p>Remove</p></div>
                     </div>
                 );
             })}
@@ -37,7 +40,7 @@ const Cart = () => {
             <div className="total">
                 <p className="cartItem">Total</p>
                 <p className="quantity">{cartCount}</p>
-                <p className="price">${cartTotal}</p>
+                <p className="price">${cartTotal.toFixed(2)}</p>
                 <div onClick={clear} className="remove"><p>Clear Cart</p></div>
             </div>
 

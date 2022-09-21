@@ -5,49 +5,30 @@ import { CartContext } from "../../../context/CartContext";
 import ItemCount from "./ItemCount/ItemCount";
 
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({ item, colorId }) => {
     const [quantity, setQuantity] = useState(0)
     const {addItem} = useContext(CartContext);
 
     const onAdd = (quantity) => {
         setQuantity(quantity)
-        addItem(item, quantity)
+        addItem(item, quantity, colorId)
     };
 
     useEffect(() => {
         setTimeout(() => {
-            document.querySelector(".activeSlide").classList.add("active");
-            document.querySelector(".colorSelector").classList.add("colorSelected");
-            document.querySelector(".carousel-indicators").classList.remove("invisible");
-            document.querySelector(".carousel-indicators").classList.add("visible");
+            document.querySelector(".carousel-item").classList.add("active");
         }, 550);
     },[]);
 
-    let colorNames = []
-    let color = 0;
-    let colors;
-    function selectColor(newColor) {
-        document.querySelector(".colorSelector:nth-child("+(color+1)+")").classList.remove("colorSelected");
-        document.querySelector(".active").classList.remove("active");
-        document.querySelector(".carousel-indicators:nth-child("+(color+1)+")").classList.add("invisible")
-        color = newColor
-        colors = item.colors[color]
-        document.getElementById("colorName").innerHTML = colorNames[color];
-        document.querySelector(".colorSelector:nth-child("+(color+1)+")").classList.add("colorSelected");
-        document.querySelector(".carousel-inner:nth-child("+(color+1)+")").querySelector(".carousel-item").classList.add("active");
-        document.querySelector(".carousel-indicators:nth-child("+(color+1)+")").classList.remove("invisible")
-    }
+
 
     return (
         <div id="itemDetail" className="card card-body">
             
             <div id="itemDetailCarousel" className="carousel" data-ride="carousel">
-
                 <div id="carouselIndicatorsContainer">
-                    {item.colors?.map((colors) => {
-                        return (
-                            <ol className="carousel-indicators invisible" key={colors.id}>
-                                {colors.imgs?.map((imgs) => {
+                            <ol className="carousel-indicators">
+                                {item?.colors?.[colorId]?.imgs?.map((imgs) => {
                                     return (
                                         <li data-target="#itemDetailCarousel" data-slide-to={imgs.id} className="activeIndicator" key={imgs.id}>
                                             <img src={imgs.img} alt="" />
@@ -55,8 +36,6 @@ const ItemDetail = ({ item }) => {
                                     )
                                 })}
                             </ol>
-                        )
-                    })}
                 </div>
                     
                 <div id="carousel">
@@ -66,17 +45,13 @@ const ItemDetail = ({ item }) => {
                     </a>
 
                     <div id="carouselContainer">
-                        {item.colors?.map((colors) => {
-                            return (
-                                <div className="carousel-inner" key={colors.id}>
-                                    {colors.imgs?.map((imgs) => {
+                                <div className="carousel-inner">
+                                    {item?.colors?.[colorId]?.imgs?.map((imgs) => {
                                         return (
-                                            <img className="carousel-item activeSlide" src={imgs.img} alt="" key={imgs.id}/>
+                                            <img className="carousel-item" src={imgs.img} alt="" key={imgs.id}/>
                                         );
                                     })}
                                 </div>
-                            )
-                        })}
                     </div>
 
                     <a className="carousel-control-next carouselControl" href="#itemDetailCarousel" role="button" data-slide="next">
@@ -84,11 +59,11 @@ const ItemDetail = ({ item }) => {
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
+
             </div>
-
             
-
             <div id="itemDetails">
+
                 <div>
                     <h3>{item.title}</h3>
                     <h4>${item.price}</h4>
@@ -97,17 +72,20 @@ const ItemDetail = ({ item }) => {
                     <h5>Colors</h5>
                     <ul className="colors">
                         {item.colors?.map((colors) => {
-                            colorNames.push(colors.color)
-                            return <li className="colorSelector" style={{ backgroundColor: colors.colorN }} key={colors.id} onClick={()=>{selectColor(colors.id)}} ></li>
+                            return (
+                                <Link to={"/detail/"+item.id+colors.id} key={colors.id}>
+                                    <li className={"colorSelector" + (parseInt(colorId) === colors.id ? " colorSelected" : "")} style={{ backgroundColor: colors.colorN }}></li>
+                                </Link>
+                            )
                         })}
                     </ul>
-                    <h5 id="colorName">{colorNames[color]}</h5>
+                    <h5 id="colorName">{item.colors?.[colorId]?.color}</h5>
                 </div>
                 {quantity === 0
-                    ? <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
+                    ? <ItemCount stock={item.colors?.[colorId]?.stock} initial={1} onAdd={onAdd}/>
                     : <Link to={"/cart"}><button className="btn, btn-light" id="goToCart">Go to cart</button></Link>
                 }
-                
+
             </div>
         </div>
     );

@@ -8,31 +8,31 @@ const CartProvider = ({ children }) => {
     const [cartCount, setCartCount] = useState (0);
     const [cartTotal, setCartTotal] = useState (0);
 
-    const addItem = (item, quantity) => {
-        if (isInCart(item.id)) {
-            addMore(item, quantity)
+    const addItem = (item, quantity, colorId) => {
+        if (isInCart(item.id, colorId)) {
+            addMore(item, quantity, colorId)
         } else {
-            setCart([...cart, { ...item, quantity }]);
+            setCart([...cart, { ...item, quantity, colorId }]);
         }
     };
 
-    const isInCart = (id) => {
-        return cart.some((prod) => prod.id === id);
+    const isInCart = (id, colorId) => {
+        return cart.some((prod) => prod.id === id & prod.colorId === colorId);
     };
 
-    const addMore = (item, quantity) => {
+    const addMore = (item, quantity, colorId) => {
         const newCart = cart.map((prod) =>
             prod.id === item.id
                 ? prod.quantity + quantity > item.stock
-                    ? { ...prod, quantity: item.stock }
-                    : { ...prod, quantity: prod.quantity + quantity }
+                    ? { ...prod, quantity: item.stock, colorId }
+                    : { ...prod, quantity: prod.quantity + quantity, colorId }
                 : prod 
         );
         setCart(newCart);
     };
 
-    const removeItem = (id) => {
-        setCart(cart.filter((prod) => prod.id !==id));
+    const removeItem = (id, colorId) => {
+        setCart(cart.filter((prod) => prod.id !==id | prod.colorId !==colorId));
     }
 
     const clear = () => {
@@ -46,7 +46,6 @@ const CartProvider = ({ children }) => {
                 (newCartCount += prod.quantity,
                 newCartTotal += (prod.price * newCartCount))
             )
-            console.log(newCartTotal)
             setCartCount(newCartCount)
             setCartTotal(newCartTotal)
     },[cart])

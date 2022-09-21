@@ -2,6 +2,11 @@ import React, { useState } from "react";
 
 const ItemCount = (props) => {
     const [count, setCount] = useState(props.initial);
+
+    if (count > props.stock) {
+        setCount(props.stock)
+    }
+
     const sumar = () => {
         if (count < props.stock) {
             setCount(count + 1);

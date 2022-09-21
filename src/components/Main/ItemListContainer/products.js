@@ -1,15 +1,14 @@
 export const products = [
     {
-        id: 0,
         title: "DIVE C9+",
         price: 399.99,
-        stock: 10,
         category: "smartphones",
         colors: [
             {
                 id: 0,
                 color: "Burgundy",
                 colorN: "#694E57",
+                stock: 12,
                 imgs: [
                     {
                         id: 0,
@@ -37,6 +36,7 @@ export const products = [
                 id: 1,
                 color: "Phantom Black",
                 colorN: "#000000",
+                stock: 9,
                 imgs: [
                     {
                         id: 0,
@@ -60,6 +60,7 @@ export const products = [
                 id: 2,
                 color: "Phantom White",
                 colorN: "#E9E9E7",
+                stock: 10,
                 imgs: [
                     {
                         id: 0,
@@ -87,6 +88,7 @@ export const products = [
                 id: 3,
                 color: "Green",
                 colorN: "#507974",
+                stock: 16,
                 imgs: [
                     {
                         id: 0,
@@ -113,16 +115,15 @@ export const products = [
         ]
     },
     {
-        id: 1,
         title: "DIVE C9",
         price: 299.99,
-        stock: 14,
         category: "smartphones",
         colors: [
             {
                 id: 0,
                 color: "Pink Gold",
                 colorN: "#E7D1CD",
+                stock: 14,
                 imgs: [
                     {
                         id: 0,
@@ -150,6 +151,7 @@ export const products = [
                 id: 1,
                 color: "Phantom Black",
                 colorN: "#000000",
+                stock: 32,
                 imgs: [
                     {
                         id: 0,
@@ -177,6 +179,7 @@ export const products = [
                 id: 2,
                 color: "Phantom White",
                 colorN: "#E9E9E7",
+                stock: 17,
                 imgs: [
                     {
                         id: 0,
@@ -204,6 +207,7 @@ export const products = [
                 id: 3,
                 color: "Green",
                 colorN: "#507974",
+                stock: 4,
                 imgs: [
                     {
                         id: 0,
@@ -230,16 +234,15 @@ export const products = [
         ]
     },
     {
-        id: 2,
         title: "DIVE E8",
         price: 99.99,
-        stock: 0,
         category: "smartphones",
         colors: [
             {
                 id: 0,
                 color: "Awesome Blue",
                 colorN: "#7AB7DC",
+                stock: 33,
                 imgs: [
                     {
                         id: 0,
@@ -267,6 +270,7 @@ export const products = [
                 id: 1,
                 color: "Awesome Black",
                 colorN: "#000000",
+                stock: 2,
                 imgs: [
                     {
                         id: 0,
@@ -294,6 +298,7 @@ export const products = [
                 id: 2,
                 color: "Awesome White",
                 colorN: "#E9E9E7",
+                stock: 18,
                 imgs: [
                     {
                         id: 0,
@@ -320,246 +325,15 @@ export const products = [
         ]
     },
     {
-        id: 3,
-        title: "DIVE C9+",
-        price: 399.99,
-        stock: 37,
-        category: "smartphones",
-        colors: [
-            {
-                id: 0,
-                color: "Green",
-                colorN: "#507974",
-                imgs: [
-                    {
-                        id: 0,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/Green/S22U-main_r9hpgd.webp"
-                    },
-                    {
-                        id: 1,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/Green/S22U-front_rhgtld.webp"
-                    },
-                    {
-                        id: 2,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/Green/S22U-back_f7b34y.webp"
-                    },
-                    {
-                        id: 3,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/Green/S22U-angle_duialv.webp"
-                    },
-                    {
-                        id: 4,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/Green/S22U-side_hbtngj.webp"
-                    }
-                ]
-            },
-            {
-                id: 1,
-                color: "Phantom Black",
-                colorN: "#000000",
-                imgs: [
-                    {
-                        id: 0,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22U/Black/S22U-main_jsfbh3.webp"
-                    },
-                    {
-                        id: 1,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/Black/S22U-front_vup58l.webp"
-                    },
-                    {
-                        id: 2,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22U/Black/S22U-back_v78ivn.webp"
-                    },
-                    {
-                        id: 3,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22U/Black/S22U-angle_na9ld0.webp"
-                    }
-                ]
-            },
-            {
-                id: 2,
-                color: "Phantom White",
-                colorN: "#E9E9E7",
-                imgs: [
-                    {
-                        id: 0,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/White/S22U-main_ekoamx.webp"
-                    },
-                    {
-                        id: 1,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/White/S22U-front_bq6wrc.webp"
-                    },
-                    {
-                        id: 2,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/White/S22U-back_mkobkc.webp"
-                    },
-                    {
-                        id: 3,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/White/S22U-angle_vtxwpq.webp"
-                    },
-                    {
-                        id: 4,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890385/Dive/S22U/White/S22U-side_cg0uz2.webp"
-                    }
-                ]
-            },
-            {
-                id: 3,
-                color: "Burgundy",
-                colorN: "#694E57",
-                imgs: [
-                    {
-                        id: 0,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/Burgundy/S22U-main_vhfwbp.webp"
-                    },
-                    {
-                        id: 1,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22U/Burgundy/S22U-front_igjmae.webp"
-                    },
-                    {
-                        id: 2,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22U/Burgundy/S22U-back_sf0wmh.webp"
-                    },
-                    {
-                        id: 3,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22U/Burgundy/S22U-angle_xpxq7z.webp"
-                    },
-                    {
-                        id: 4,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890384/Dive/S22U/Burgundy/S22U-side_fmng5h.webp"
-                    }
-                ]
-            },
-        ]
-    },
-    {
-        id: 4,
-        title: "DIVE C9",
-        price: 299.99,
-        stock: 14,
-        category: "smartphones",
-        colors: [
-            {
-                id: 2,
-                color: "Phantom White",
-                colorN: "#E9E9E7",
-                imgs: [
-                    {
-                        id: 0,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-main_eyijpb.webp"
-                    },
-                    {
-                        id: 1,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-front_dzabmd.webp"
-                    },
-                    {
-                        id: 2,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-back_oi7r4i.webp"
-                    },
-                    {
-                        id: 3,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-angle_vi4y6j.webp"
-                    },
-                    {
-                        id: 4,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20white/S22-side_tnzosb.webp"
-                    }
-                ]
-            },
-            {
-                id: 1,
-                color: "Phantom Black",
-                colorN: "#000000",
-                imgs: [
-                    {
-                        id: 0,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20black/S22-main_slsxep.webp"
-                    },
-                    {
-                        id: 1,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Phantom%20black/S22-front_aovfuz.webp"
-                    },
-                    {
-                        id: 2,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Phantom%20black/S22-back_z9w5fr.webp"
-                    },
-                    {
-                        id: 3,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Phantom%20black/S22-angle_l0qooe.webp"
-                    },
-                    {
-                        id: 4,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Phantom%20black/S22-side_hgfviz.webp"
-                    }
-                ]
-            },
-            {
-                id: 2,
-                color: "Pink Gold",
-                colorN: "#E7D1CD",
-                imgs: [
-                    {
-                        id: 0,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-main_mpjzjw.webp"
-                    },
-                    {
-                        id: 1,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-front_pmhjwh.webp"
-                    },
-                    {
-                        id: 2,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-back_agg8ab.webp"
-                    },
-                    {
-                        id: 3,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-angle_f4nxnd.webp"
-                    },
-                    {
-                        id: 4,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890383/Dive/S22%2B/Pink%20gold/S22-side_pwvmtc.webp"
-                    }
-                ]
-            },
-            {
-                id: 3,
-                color: "Green",
-                colorN: "#507974",
-                imgs: [
-                    {
-                        id: 0,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1662408698/Dive/S22%2B/Green/S22-main_wij27k.webp"
-                    },
-                    {
-                        id: 1,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Green/S22-front_vpmerb.webp"
-                    },
-                    {
-                        id: 2,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Green/S22-back_mc2ev4.webp"
-                    },
-                    {
-                        id: 3,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890381/Dive/S22%2B/Green/S22-angle_qargax.webp"
-                    },
-                    {
-                        id: 4,
-                        img: "https://res.cloudinary.com/dss1do1r6/image/upload/v1661890382/Dive/S22%2B/Green/S22-side_zvhvyh.webp"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        id: 5,
         title: "DIVE Watch 5 Pro",
         price: 449.99,
-        stock: 26,
         category: "watches",
         colors: [
             {
                 id: 0,
                 color: "Pink Gold",
                 colorN: "#F0CFC3",
+                stock: 53,
                 imgs: [
                     {
                         id: 0,
@@ -587,6 +361,7 @@ export const products = [
                 id: 1,
                 color: "Graphite",
                 colorN: "#4A4A4D",
+                stock: 39,
                 imgs: [
                     {
                         id: 0,
@@ -614,6 +389,7 @@ export const products = [
                 id: 2,
                 color: "Silver",
                 colorN: "#C7C8C9",
+                stock: 24,
                 imgs: [
                     {
                         id: 0,
@@ -640,16 +416,15 @@ export const products = [
         ]
     },
     {
-        id: 6,
         title: "DIVE Watch 5",
         price: 329.99,
-        stock: 28,
         category: "watches",
         colors: [
             {
                 id: 0,
                 color: "Black",
                 colorN: "#404145",
+                stock: 45,
                 imgs: [
                     {
                         id: 0,
@@ -677,6 +452,7 @@ export const products = [
                 id: 1,
                 color: "Green",
                 colorN: "#445252",
+                stock: 33,
                 imgs: [
                     {
                         id: 0,
@@ -704,6 +480,7 @@ export const products = [
                 id: 2,
                 color: "Silver",
                 colorN: "#C7C8CA",
+                stock: 36,
                 imgs: [
                     {
                         id: 0,
@@ -730,16 +507,15 @@ export const products = [
         ]
     },
     {
-        id: 7,
         title: "DIVE Watch 4",
         price: 249.99,
-        stock: 16,
         category: "watches",
         colors: [
             {
                 id: 0,
                 color: "Grey Titanium",
                 colorN: "#867E74",
+                stock: 9,
                 imgs: [
                     {
                         id: 0,
@@ -767,6 +543,7 @@ export const products = [
                 id: 1,
                 color: "Black Titanium",
                 colorN: "#404145",
+                stock: 42,
                 imgs: [
                     {
                         id: 0,
@@ -793,16 +570,15 @@ export const products = [
         ]
     },
     {
-        id: 8,
         title: "DIVE Fit ",
         price: 119.99,
-        stock: 16,
         category: "watches",
         colors: [
             {
                 id: 0,
                 color: "Black",
                 colorN: "#000000",
+                stock: 16,
                 imgs: [
                     {
                         id: 0,
@@ -830,6 +606,7 @@ export const products = [
                 id: 1,
                 color: "Scarlet",
                 colorN: "#EB695C",
+                stock: 29,
                 imgs: [
                     {
                         id: 0,
@@ -856,16 +633,15 @@ export const products = [
         ]
     },
     {
-        id: 9,
         title: "DIVE Tab 8",
         price: 699.99,
-        stock: 14,
         category: "tablets",
         colors: [
             {
                 id: 0,
                 color: "Graphite",
                 colorN: "#494D53",
+                stock: 11,
                 imgs: [
                     {
                         id: 0,
@@ -889,6 +665,7 @@ export const products = [
                 id: 1,
                 color: "Silver",
                 colorN: "#C0C0C0",
+                stock: 4,
                 imgs: [
                     {
                         id: 0,
@@ -912,6 +689,7 @@ export const products = [
                 id: 2,
                 color: "Pink Gold",
                 colorN: "#D6B6A8",
+                stock: 26,
                 imgs: [
                     {
                         id: 0,
@@ -934,16 +712,15 @@ export const products = [
         ]
     },
     {
-        id: 10,
         title: "DIVE Tab 7",
         price: 459.99,
-        stock: 19,
         category: "tablets",
         colors: [
             {
                 id: 0,
                 color: "Mystic Black",
                 colorN: "#3C3C3E",
+                stock: 44,
                 imgs: [
                     {
                         id: 0,
@@ -967,6 +744,7 @@ export const products = [
                 id: 1,
                 color: "Mystic Navy",
                 colorN: "#3A414A",
+                stock: 35,
                 imgs: [
                     {
                         id: 0,
@@ -989,11 +767,10 @@ export const products = [
         ]
     },
     {
-        id: 11,
         title: "DIVE Tab 6",
         price: 289.99,
-        stock: 19,
         category: "tablets",
+        stock: 6,
         colors: [
             {
                 id: 0,
