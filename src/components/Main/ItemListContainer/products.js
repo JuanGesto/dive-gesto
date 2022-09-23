@@ -770,12 +770,12 @@ export const products = [
         title: "DIVE Tab 6",
         price: 289.99,
         category: "tablets",
-        stock: 6,
         colors: [
             {
                 id: 0,
                 color: "Gray",
                 colorN: "#777777",
+                stock: 2,
                 imgs: [
                     {
                         id: 0,

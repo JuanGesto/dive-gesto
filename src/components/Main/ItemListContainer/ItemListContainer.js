@@ -10,14 +10,17 @@ const ItemListContainer = ({ saludo }) => {
 
     useEffect(() => {
         const itemCollection = collection(db, "products");
-        const q = query(itemCollection, where("category", '==', ""+id+""))
-        
-        getDocs(id ? q : itemCollection).then((data) => {
-            setItems(data.docs.map((prod) => ({ id: prod.id, ...prod.data()})));
-        })
-        .catch((error) => {
-            console.log(error)
-        });
+        const q = query(itemCollection, where("category", "==", "" + id + ""));
+
+        getDocs(id ? q : itemCollection)
+            .then((data) => {
+                setItems(
+                    data.docs.map((prod) => ({ id: prod.id, ...prod.data() }))
+                );
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     }, [id]);
 
     return (

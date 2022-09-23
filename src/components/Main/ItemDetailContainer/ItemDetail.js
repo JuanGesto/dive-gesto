@@ -81,7 +81,12 @@ const ItemDetail = ({ item, colorId }) => {
                     </ul>
                     <h5 id="colorName">{item.colors?.[colorId]?.color}</h5>
                 </div>
-                {quantity === 0
+                {item.colors?.[colorId]?.stock === 0
+                ? <div id="outOfStock">
+                    <p>Out of stock</p>
+                    <Link to={"/category/"+item.category}><button className="btn, btn-light" id="goToCart">Browse similar products</button></Link>
+                </div>
+                : quantity === 0
                     ? <ItemCount stock={item.colors?.[colorId]?.stock} initial={1} onAdd={onAdd}/>
                     : <Link to={"/cart"}><button className="btn, btn-light" id="goToCart">Go to cart</button></Link>
                 }

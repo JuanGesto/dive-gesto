@@ -46,7 +46,7 @@ const Cart = () => {
 
             <div id="cartBtns">
                 <Link to={`/`} className="btn btn-light"><p>Keep shopping</p></Link>
-                <Link to={``} className="btn btn-light"><p>Finish purchase</p></Link>
+                <Link to={`/checkout`} className="btn btn-light"><p>Continue</p></Link>
             </div>
         </div>
     );

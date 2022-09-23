@@ -54,6 +54,15 @@
                 border: 3px solid #4fa6e0;
             }
         }
+        #outOfStock {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            p {
+                color: #d33f3f;
+                margin-bottom: 5px;
+            }
+        }
     }
 }
 
