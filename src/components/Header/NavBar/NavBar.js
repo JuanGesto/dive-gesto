@@ -1,59 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../../firebaseConfig";
 import CollapseMenu from "./CollapseMenu";
 import CartWidget from "./CartWidget";
 
 const NavBar = () => {
-    {
-        /* Este codigo maneja el collapse del navbar*/
-    }
-    let collapsed = false;
+    const [categories, setCategories] = useState([]);
+    const [category, setCategory] = useState("");
+    const [collapsed, setCollapsed] = useState(false)
 
-    function show(show, hide1, hide2, hide3) {
-        document.getElementById(hide1).classList.remove("d-block");
-        document.getElementById(hide2).classList.remove("d-block");
-        document.getElementById(hide3).classList.remove("d-block");
-        document.getElementById(show).classList.add("d-block");
+    useEffect(() => {
+        const categoryCollection = collection(db, "categories");
+
+        getDocs(categoryCollection)
+            .then((data) => {
+                setCategories(data.docs.map((cat) => ({ ...cat.data() })));
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }, []);
+
+    function show(show) {
+        setCategory(show)
     }
     function collapseShow() {
         if (collapsed === false) {
-            document
-                .getElementById("collapsingMenu")
-                .classList.add("collapseShow");
-            document
-                .getElementById("collapsingMenu")
-                .classList.remove("collapseHide");
-            document
-            .getElementById("divider")
-            .classList.add("black");
-            document
-                .getElementById("divider")
-                .classList.remove("transparent");
-            collapsed = true;
+            setCollapsed(true)
         }
     }
     function collapseHide() {
         if (collapsed === true) {
-            document
-                .getElementById("collapsingMenu")
-                .classList.add("collapseHide");
-            document
-                .getElementById("collapsingMenu")
-                .classList.remove("collapseShow");
-            document
-                .getElementById("divider")
-                .classList.add("transparent");
-            document
-            .getElementById("divider")
-            .classList.remove("black");
-            collapsed = false;
+            setCollapsed(false)
         }
     }
 
     return (
-        <>
             <header id="header">
-                <div onMouseLeave={collapseHide}>
+                <div onMouseLeave={()=>{collapseHide()}}>
                     <nav id="navbar">
                         <Link to={"/"} id="logo">
                             <img
@@ -62,90 +47,25 @@ const NavBar = () => {
                             />
                         </Link>
                         <ul id="productsNav">
-                            <li
-                                onMouseOver={() =>
-                                    show(
-                                        "ulMobile",
-                                        "ulAudio",
-                                        "ulTV",
-                                        "ulComputing"
-                                    )
-                                }
-                                onMouseEnter={collapseShow}>
-                                <a
-                                    id="mobile"
-                                    className="btn btn-light"
-                                    data-toggle="collapse"
-                                    href="#collapseMenu"
-                                    role="button"
-                                    aria-expanded="false"
-                                    aria-controls="collapseMenu">
-                                    Mobile
-                                </a>
-                            </li>
-                            <li
-                                onMouseOver={() =>
-                                    show(
-                                        "ulAudio",
-                                        "ulMobile",
-                                        "ulTV",
-                                        "ulComputing"
-                                    )
-                                }
-                                onMouseEnter={collapseShow}>
-                                <a
-                                    id="audio"
-                                    className="btn btn-light"
-                                    data-toggle="collapse"
-                                    href="#collapseMenu"
-                                    role="button"
-                                    aria-expanded="false"
-                                    aria-controls="collapseMenu">
-                                    Audio
-                                </a>
-                            </li>
-                            <li
-                                onMouseOver={() =>
-                                    show(
-                                        "ulTV",
-                                        "ulMobile",
-                                        "ulAudio",
-                                        "ulComputing"
-                                    )
-                                }
-                                onMouseEnter={collapseShow}>
-                                <a
-                                    id="TV"
-                                    className="btn btn-light"
-                                    data-toggle="collapse"
-                                    href="#collapseMenu"
-                                    role="button"
-                                    aria-expanded="false"
-                                    aria-controls="collapseMenu">
-                                    TV
-                                </a>
-                            </li>
-                            <li
-                                onMouseOver={() =>
-                                    show(
-                                        "ulComputing",
-                                        "ulMobile",
-                                        "ulAudio",
-                                        "ulTV"
-                                    )
-                                }
-                                onMouseEnter={collapseShow}>
-                                <a
-                                    id="computing"
-                                    className="btn btn-light"
-                                    data-toggle="collapse"
-                                    href="#collapseMenu"
-                                    role="button"
-                                    aria-expanded="false"
-                                    aria-controls="collapseMenu">
-                                    Computing
-                                </a>
-                            </li>
+                            {categories.map((category) => {
+                                return (
+                                    <li
+                                        key={category.name.toLowerCase()}
+                                        onMouseOver={() => show((category.name))}
+                                        onMouseEnter={collapseShow}>
+                                        <a
+                                            id={category.name.toLowerCase()}
+                                            className="btn btn-light"
+                                            data-toggle="collapse"
+                                            href="collapseMenu"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="collapseMenu">
+                                            {category.name}
+                                        </a>
+                                    </li>
+                                );
+                            })}
                         </ul>
 
                         <ul id="searchNav">
@@ -170,11 +90,10 @@ const NavBar = () => {
                             </li>
                         </ul>
                     </nav>
-                    <CollapseMenu />
+                    <CollapseMenu categories={categories} category={category} collapsed={collapsed}/>
                 </div>
-                <div className="transparent" id="divider"></div>
+                <div className={collapsed ? "black" : "transparent"} id="divider"></div>
             </header>
-        </>
     );
 };
 
