@@ -1,7 +1,7 @@
 # Ecommerce developed with ReactJS
-[![](https://res.cloudinary.com/dss1do1r6/image/upload/v1662510099/Dive/logo_xf7mi7.svg)](https://dive.vercel.app)
+[![](https://res.cloudinary.com/dss1do1r6/image/upload/v1662510099/Dive/logo_xf7mi7.svg)](https://dive-tech.vercel.app)
 
-## Project hosted on https://dive.vercel.app
+## Project hosted on https://dive-tech.vercel.app
 
 ## Libraries used
 
