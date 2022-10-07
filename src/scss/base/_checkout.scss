@@ -1,11 +1,11 @@
 #checkoutContainer {
     display: flex;
     justify-content: center;
+    margin: 2.5em;
     #checkout {
     display: flex;
     flex-direction: row;
     width: fit-content;
-    margin-top: 5%;
     #form {
         display: flex;
         flex-direction: column;

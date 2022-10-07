@@ -1,5 +1,5 @@
 #cartContainer {
-    margin: 3em 8em;
+    margin: 5em 8em;
         #cartTitle {
             display: flex;
             align-items: center;
@@ -98,4 +98,9 @@
     flex-direction: column;
     align-items: center;
     margin: 5em;
+    h3 {
+        font-size: 1.5em;
+        text-decoration: none;
+        color: white;
+    }
 }

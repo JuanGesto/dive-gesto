@@ -11,5 +11,7 @@ html {
 body {
     background-color: #171e41;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    min-height: 100vh;
 }

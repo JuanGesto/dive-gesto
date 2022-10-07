@@ -2,21 +2,52 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2em 0;
     #ItemList {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         .featuredItem {
             margin: 2em;
-            padding: .8em 0;
+            padding: 0.8em 0;
             width: 15em;
             flex-grow: 0;
-            h3, p {
+            h3,
+            p {
                 margin: 0 13%;
             }
             img {
                 width: 15em;
             }
         }
+    }
+}
+.loading {
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+}
+
+.loading::before {
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    content: "";
+}
+
+@keyframes loading {
+    0% {
+        content: "";
+    }
+    25% {
+        content: ".";
+    }
+    50% {
+        content: "..";
+    }
+    75% {
+        content: "...";
     }
 }

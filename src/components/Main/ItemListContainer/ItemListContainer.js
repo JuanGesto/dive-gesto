@@ -4,9 +4,10 @@ import ItemList from "./ItemList";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
 
-const ItemListContainer = ({ saludo }) => {
+const ItemListContainer = ({}) => {
     const [items, setItems] = useState([]);
     const { id } = useParams();
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const itemCollection = collection(db, "products");
@@ -20,16 +21,26 @@ const ItemListContainer = ({ saludo }) => {
             })
             .catch((error) => {
                 console.log(error);
+            })
+            .finally(() => {
+                setIsLoading(false)
             });
+
+        return () => {
+            setIsLoading(true)
+        }
     }, [id]);
 
     return (
         <>
             <section id="featured">
-                {/*<h2>{saludo}</h2>*/}
-                <div id="ItemList">
-                    <ItemList items={items} />
-                </div>
+                {isLoading ? (
+                    <h2 className="loading"></h2>
+                ) : (
+                    <div id="ItemList">
+                        <ItemList items={items} />
+                    </div>
+                )}
             </section>
         </>
     );

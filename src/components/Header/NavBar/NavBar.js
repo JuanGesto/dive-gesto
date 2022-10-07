@@ -1,26 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../../firebaseConfig";
+
 import CollapseMenu from "./CollapseMenu";
 import CartWidget from "./CartWidget";
 
-const NavBar = () => {
-    const [categories, setCategories] = useState([]);
+const NavBar = ({categories}) => {
     const [category, setCategory] = useState("");
     const [collapsed, setCollapsed] = useState(false)
-
-    useEffect(() => {
-        const categoryCollection = collection(db, "categories");
-
-        getDocs(categoryCollection)
-            .then((data) => {
-                setCategories(data.docs.map((cat) => ({ ...cat.data() })));
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }, []);
 
     function show(show) {
         setCategory(show)
@@ -37,7 +23,7 @@ const NavBar = () => {
     }
 
     return (
-            <header id="header">
+            <>
                 <div onMouseLeave={()=>{collapseHide()}}>
                     <nav id="navbar">
                         <Link to={"/"} id="logo">
@@ -93,7 +79,7 @@ const NavBar = () => {
                     <CollapseMenu categories={categories} category={category} collapsed={collapsed}/>
                 </div>
                 <div className={collapsed ? "black" : "transparent"} id="divider"></div>
-            </header>
+            </>
     );
 };
 

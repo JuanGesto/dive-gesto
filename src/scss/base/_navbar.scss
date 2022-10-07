@@ -1,12 +1,13 @@
 #header {
-background-color: white;
     #navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 3.8em;
-        margin: 0 2%;
-
+        padding: 0 2%;
+        position: relative;
+        z-index: 3;
+        background-color: white;
         ul {
             display: flex;
             justify-content: space-evenly;
@@ -64,5 +65,3 @@ background-color: white;
     right: 4px;
     bottom: 0px;
 }
-
-

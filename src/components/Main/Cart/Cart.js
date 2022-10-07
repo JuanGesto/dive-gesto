@@ -9,7 +9,7 @@ const Cart = () => {
     if (cart.length === 0) {
         return (
             <div id="emptyCart">
-                <h3 style={{fontSize: "1.5em", textDecoration: "none", color: "white"}}>Your cart is empty</h3>
+                <h3>Your cart is empty</h3>
                 <Link to={`/`} className="btn btn-light">Go to home page</Link>
             </div>
         )
@@ -28,7 +28,7 @@ const Cart = () => {
                     <div className="cartItemContainer" key={item.id + item.colorId} >
                         <Link to={"/detail/"+item.id+item.colorId} id="cartTitle" className="cartItem">
                             <img src={item.colors[parseInt(item.colorId)].imgs[0].img} alt="" />
-                            <h3>{item.title + " " + item.colors[parseInt(item.colorId)].color}</h3>
+                            <h3>{item.title + " " + (item.colors?.length > 1 ? item.colors[parseInt(item.colorId)].color : "")}</h3>
                         </Link>
                         <p className="quantity">{item.quantity}</p>
                         <p className="price">${(item.price * item.quantity).toFixed(2)}</p>

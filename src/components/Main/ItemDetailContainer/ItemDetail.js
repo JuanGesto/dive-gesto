@@ -68,6 +68,7 @@ const ItemDetail = ({ item, colorId }) => {
                     <h3>{item.title}</h3>
                     <h4>${item.price}</h4>
                 </div>
+                {item.colors?.length === 1 ? <></> : 
                 <div>
                     <h5>Colors</h5>
                     <ul className="colors">
@@ -81,6 +82,7 @@ const ItemDetail = ({ item, colorId }) => {
                     </ul>
                     <h5 id="colorName">{item.colors?.[colorId]?.color}</h5>
                 </div>
+                }
                 {item.colors?.[colorId]?.stock === 0
                 ? <div id="outOfStock">
                     <p>Out of stock</p>

@@ -22,7 +22,7 @@ const CartProvider = ({ children }) => {
 
     const addMore = (item, quantity, colorId) => {
         const newCart = cart.map((prod) =>
-            prod.id === item.id
+            prod.id === item.id & prod.colorId === colorId
                 ? prod.quantity + quantity > item.stock
                     ? { ...prod, quantity: item.stock, colorId }
                     : { ...prod, quantity: prod.quantity + quantity, colorId }
@@ -44,7 +44,7 @@ const CartProvider = ({ children }) => {
             let newCartTotal = 0;
             cart.map((prod) =>
                 (newCartCount += prod.quantity,
-                newCartTotal += (prod.price * newCartCount))
+                newCartTotal += (prod.price * prod.quantity))
             )
             setCartCount(newCartCount)
             setCartTotal(newCartTotal)
