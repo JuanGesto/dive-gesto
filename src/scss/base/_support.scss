@@ -1,0 +1,27 @@
+#support {
+    display: flex;
+    justify-content: center;
+    div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 78em;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 1em;
+            width: 21em;
+            height: 13em;
+            margin: 2.5em;
+            h2 {
+                font-size: 1.5em;
+            }
+            a {
+                text-decoration: underline;
+                cursor: pointer;
+                width: fit-content;
+            }
+        }
+    }
+}
