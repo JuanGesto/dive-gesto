@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer id="footer">
             <nav id="footerNav">
-                <p>Copyright © 1995-2022 DIVE Todos los derechos reservados.</p>
+                <p>Copyright © 1995-2022 DIVE All rights reserved.</p>
                 <ul>
                     <li>
                         <BsFacebook />
